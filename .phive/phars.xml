@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phive xmlns="https://phar.io/phive">
+  <phar name="composer" version="1.10.20" installed="1.10.20" location="./tools/composer" copy="true"/>
+</phive>

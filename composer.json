@@ -1,0 +1,15 @@
+{
+    "name": "mprokopov/test-oxid-docker",
+    "description": "Test project",
+    "type": "project",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Maksym Prokopov",
+            "email": "maksym.prokopov@oxid-esales.com"
+        }
+    ],
+    "require": {
+        "oxid-esales/oxideshop-metapackage-ce": "v6.2.2"
+    }
+}
