@@ -1,7 +1,7 @@
 {
     "name": "mprokopov/test-oxid-docker",
     "description": "Test oxid 6.2 project",
-    "type": "project",
+    "type": "template",
     "keywords": ["template"],
     "homepage": "https://github.com/mprokopov/test-oxid-docker",
     "minimum-stability": "stable",
