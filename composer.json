@@ -13,8 +13,7 @@
     ],
     "require": {
         "oxid-esales/oxideshop-metapackage-ce": "v6.2.2",
-        "alfredbez/oxid-dump-autoload": "^0.5.0",
-        "oxid-professional-services/spie": "^0.0.1"
+        "alfredbez/oxid-dump-autoload": "^0.5.0"
     },
     "repositories": {
         "build": {
