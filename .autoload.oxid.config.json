@@ -1,0 +1,8 @@
+{
+    "filter": [
+        "oe/",
+        "ddr/"
+    ],
+    "shopid": 1,
+    "path": ".autoload.oxid.php"
+}

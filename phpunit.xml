@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    stopOnFailure="true"
+    colors="true"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+    executionOrder="random"
+    bootstrap=".autoload.php"
+>
+  <coverage processUncoveredFiles="true">
+    <include>
+      <directory suffix=".php">project-modules</directory>
+    </include>
+    <exclude>
+      <directory suffix=".php">project-modules/*/Scripts</directory>
+      <directory suffix=".php">project-modules/*/Tests</directory>
+      <directory suffix=".php">project-modules/*/translations</directory>
+      <file>project-modules/*/metadata.php</file>
+      <directory suffix=".php">project-modules/*/views/</directory>
+      <directory suffix="metadata.php">project-modules</directory>
+    </exclude>
+  </coverage>
+  <testsuites>
+    <testsuite name="unit-tests">
+        <directory>project-modules/dummy-module/Tests/Unit</directory>
+    </testsuite>
+    <testsuite name="integration-tests">
+        <directory>project-modules/dummy-module/Tests/Integration</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
