@@ -42,8 +42,9 @@
             "tar -zcf ../$ARTIFACT ./"
         ],
         "ci:codecheck": [
-            "tools/phpcs.phar --standard=phpcs.xml --report-junit=../generated/phpcs-junit.xml",
-            "tools/psalm.phar --report=../generated/psalm-junit.xml"
+            "mkdir -p reports",
+            "tools/phpcs --standard=phpcs.xml --report-junit=reports/phpcs-junit.xml",
+            "tools/psalm --report=reports/psalm-junit.xml"
         ]
     },
     "require-dev": {
