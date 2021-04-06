@@ -37,6 +37,13 @@
         "ci:prep:integration": [
             "vendor/bin/oe-console oe:module:apply-configuration",
             "vendor/bin/oe-eshop-db_views_generate"
+        ],
+        "ci:archive": [
+            "tar -zcf ../$ARTIFACT ./"
+        ],
+        "ci:codecheck": [
+            "tools/phpcs.phar --standard=phpcs.xml --report-junit=../generated/phpcs-junit.xml",
+            "tools/psalm.phar --report=../generated/psalm-junit.xml"
         ]
     },
     "require-dev": {
