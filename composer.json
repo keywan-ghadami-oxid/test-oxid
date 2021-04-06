@@ -29,6 +29,16 @@
         "payone-gmbh/oxid-6": "*",
         "topconcepts/oxid-klarna-6": "*"
     },
+    "scripts": {
+        "ci:prep:db": [
+            "mysql -u $DB_USER -h $DB_HOST -p$DB_PASS $DB_NAME < vendor/oxid-esales/oxideshop-ce/source/Setup/Sql/database_schema.sql",
+            "mysql -u $DB_USER -h $DB_HOST -p$DB_PASS $DB_NAME < vendor/oxid-esales/oxideshop-ce/source/Setup/Sql/initial_data.sql"
+        ],
+        "ci:prep:integration": [
+            "vendor/bin/oe-console oe:module:apply-configuration",
+            "vendor/bin/oe-eshop-db_views_generate"
+        ]
+    },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     }
