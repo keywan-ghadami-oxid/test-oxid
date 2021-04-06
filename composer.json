@@ -15,6 +15,20 @@
         "oxid-esales/oxideshop-metapackage-ce": "v6.2.2",
         "alfredbez/oxid-dump-autoload": "^0.5.0"
     },
+    "replace": {
+        "amzn/amazon-pay-sdk-php": "*",
+        "bestit/amazonpay4oxid": "*",
+        "oxid-esales/azure-theme": "*",
+        "oxid-esales/wave-theme": "*",
+        "oxid-esales/oxideshop-demodata-ce": "*",
+        "oxid-esales/oxideshop-demodata-ee": "*",
+        "oxid-esales/oxideshop-demodata-pe": "*",
+        "oxid-esales/oxideshop-demodata-installer": "*",
+        "oxid-esales/paymorrow-module": "*",
+        "oxid-esales/paypal-module": "*",
+        "payone-gmbh/oxid-6": "*",
+        "topconcepts/oxid-klarna-6": "*"
+    },
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     }
