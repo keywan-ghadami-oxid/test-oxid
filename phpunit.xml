@@ -22,10 +22,10 @@
   </coverage>
   <testsuites>
     <testsuite name="unit-tests">
-        <directory>project-modules/dummy-module/Tests/Unit</directory>
+        <directory>project-modules/*/Tests/Unit</directory>
     </testsuite>
     <testsuite name="integration-tests">
-        <directory>project-modules/dummy-module/Tests/Integration</directory>
+        <directory>project-modules/*/Tests/Integration</directory>
     </testsuite>
   </testsuites>
 </phpunit>
