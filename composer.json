@@ -1,5 +1,5 @@
 {
-    "name": "oxid-professional-services/test-oxid-docker",
+    "name": "oxid-professional-services/test-oxid",
     "description": "Test oxid 6.2 project",
     "type": "template",
     "keywords": ["template"],
