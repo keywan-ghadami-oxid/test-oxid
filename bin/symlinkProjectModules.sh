@@ -62,5 +62,5 @@ do
     fi
 
     e_arrow "adding module testing lib configuration for ${module_target_directory} ..."
-    sed 's#<modulepath>#${module_target_directory}#' -i ${oxideshop_path}\test_config.yml
+    sed 's#<modulepath>#${module_target_directory}#' -i ${oxideshop_path}/test_config.yml
 done
