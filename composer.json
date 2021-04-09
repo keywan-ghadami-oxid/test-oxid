@@ -49,6 +49,6 @@
         ]
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "oxid-esales/testing-library": "^v7.3"
     }
 }
