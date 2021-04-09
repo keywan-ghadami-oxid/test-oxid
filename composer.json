@@ -4,7 +4,8 @@
     "type": "template",
     "keywords": ["template"],
     "homepage": "https://github.com/mprokopov/test-oxid-docker",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "authors": [
         {
             "name": "Maksym Prokopov",
