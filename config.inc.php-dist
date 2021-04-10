@@ -6,11 +6,11 @@
 
     // Database connection information
     $this->dbType = 'pdo_mysql';
-    $this->dbHost  = getenv('DB_HOST'); // database host name
+    $this->dbHost  = getenv('MYSQL_HOST'); // database host name
     $this->dbPort  = 3306; // tcp port to which the database is bound
-    $this->dbName = getenv('DB_NAME'); // database name
-    $this->dbUser = getenv('DB_USER'); // database user name
-    $this->dbPwd  = getenv('DB_PASS'); // database user password
+    $this->dbName = getenv('MYSQL_DATABASE'); // database name
+    $this->dbUser = getenv('MYSQL_USER'); // database user name
+    $this->dbPwd  = getenv('MYSQL_PASS'); // database user password
     $this->sShopURL     = getenv('SHOP_URL'); // eShop base url, required
     $this->sSSLShopURL  = null;            // eShop SSL url, optional
     $this->sAdminSSLURL = null;            // eShop Admin SSL url, optional
