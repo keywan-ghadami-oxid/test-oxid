@@ -8,5 +8,7 @@ for d in project-modules/*; do
     metadata="$d/metadata.php"
     if grep -q "'extend'" "$metadata"; then
         vendor/bin/oxid-dump-autoload -s "$metadata" -p ".autoload.module.$module_name.php"
+        echo "created autoload .autoload.module.$module_name.php"
+        cat .autoload.module.$module_name.php
     fi
 done
