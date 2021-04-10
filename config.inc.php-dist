@@ -10,7 +10,7 @@
     $this->dbPort  = 3306; // tcp port to which the database is bound
     $this->dbName = getenv('MYSQL_DATABASE'); // database name
     $this->dbUser = getenv('MYSQL_USER'); // database user name
-    $this->dbPwd  = getenv('MYSQL_PASS'); // database user password
+    $this->dbPwd  = getenv('MYSQL_PASSWORD'); // database user password
     $this->sShopURL     = getenv('SHOP_URL'); // eShop base url, required
     $this->sSSLShopURL  = null;            // eShop SSL url, optional
     $this->sAdminSSLURL = null;            // eShop Admin SSL url, optional
