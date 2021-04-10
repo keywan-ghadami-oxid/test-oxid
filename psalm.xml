@@ -10,8 +10,5 @@
 >
     <projectFiles>
         <directory name="project-modules/module-under-test/src" />
-        <ignoreFiles>
-            <directory name="vendor" />
-        </ignoreFiles>
     </projectFiles>
 </psalm>
