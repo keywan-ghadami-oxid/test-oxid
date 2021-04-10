@@ -37,7 +37,7 @@ do
     fi
     full_module_target_directory="$oxideshop_path/source/modules/$module_target_directory"
 
-    e_arrow "symlinking $module to $module_target_directory"
+    e_arrow "symlinking ../../../project-modules/$module_directory_only to $full_module_target_directory"
     symlink "../../../project-modules/$module_directory_only" "$full_module_target_directory"
     if [[ -L "$full_module_target_directory" && -d "$full_module_target_directory" ]]
     then
