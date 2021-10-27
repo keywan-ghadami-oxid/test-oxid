@@ -1,6 +1,6 @@
 {
     "name": "oxid-professional-services/test-oxid",
-    "description": "Test oxid 6.2 project",
+    "description": "Test oxid 6.3 project",
     "type": "template",
     "keywords": ["template"],
     "homepage": "https://github.com/mprokopov/test-oxid-docker",
@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "oxid-esales/oxideshop-metapackage-ce": "^v6.2.3",
+        "oxid-esales/oxideshop-metapackage-ce": "^v6.3",
         "alfredbez/oxid-dump-autoload": "^0.5.0"
     },
     "replace": {
@@ -21,10 +21,6 @@
         "bestit/amazonpay4oxid": "*",
         "oxid-esales/azure-theme": "*",
         "oxid-esales/wave-theme": "*",
-        "oxid-esales/oxideshop-demodata-ce": "*",
-        "oxid-esales/oxideshop-demodata-ee": "*",
-        "oxid-esales/oxideshop-demodata-pe": "*",
-        "oxid-esales/oxideshop-demodata-installer": "*",
         "oxid-esales/paymorrow-module": "*",
         "oxid-esales/paypal-module": "*",
         "payone-gmbh/oxid-6": "*",
