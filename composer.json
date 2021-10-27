@@ -45,6 +45,6 @@
         ]
     },
     "require-dev": {
-        "oxid-esales/testing-library": "^v7.3"
+        "oxid-esales/testing-library": "^v8"
     }
 }
