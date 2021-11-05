@@ -10,5 +10,6 @@
 >
     <projectFiles>
         <directory name="project-modules/module-under-test/src" />
+        <directory name="project-modules/module-under-test/migration" />     
     </projectFiles>
 </psalm>
