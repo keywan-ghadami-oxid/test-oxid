@@ -9,18 +9,20 @@
     "require": {
         "oxid-esales/oxideshop-metapackage-ee": "^v6.3.1"
     },
-    {
-      "type": "composer",
-      "url": "https://enterprise-edition.packages.oxid-esales.com/"
-    },
-    {
-      "type": "composer",
-      "url": "https://erp.packages.oxid-esales.com/"
-    },
-    {
-      "type": "composer",
-      "url": "https://b2b-edition.packages.oxid-esales.com/"
-    },
+    "repositories": [
+        {
+          "type": "composer",
+          "url": "https://enterprise-edition.packages.oxid-esales.com/"
+        },
+        {
+          "type": "composer",
+          "url": "https://erp.packages.oxid-esales.com/"
+        },
+        {
+          "type": "composer",
+          "url": "https://b2b-edition.packages.oxid-esales.com/"
+        }
+    ],
     "replace": {
         "amzn/amazon-pay-sdk-php": "*",
         "bestit/amazonpay4oxid": "*",
