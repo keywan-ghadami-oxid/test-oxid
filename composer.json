@@ -1,20 +1,13 @@
 {
     "name": "oxid-professional-services/test-oxid",
-    "description": "Test oxid 6.2 project",
+    "description": "oxid ee slim project",
     "type": "template",
     "keywords": ["template"],
     "homepage": "https://github.com/mprokopov/test-oxid-docker",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "authors": [
-        {
-            "name": "Maksym Prokopov",
-            "email": "maksym.prokopov@oxid-esales.com"
-        }
-    ],
     "require": {
-        "oxid-esales/oxideshop-metapackage-ce": "^v6.2.3",
-        "alfredbez/oxid-dump-autoload": "^0.5.0"
+        "oxid-esales/oxideshop-metapackage-ee": "^v6.4.1"
     },
     "replace": {
         "amzn/amazon-pay-sdk-php": "*",
@@ -31,24 +24,7 @@
         "topconcepts/oxid-klarna-6": "*"
     },
     "scripts": {
-        "ci:prep:db": [
-            "mysql -u $DB_USER -h $DB_HOST -p$DB_PASS $DB_NAME < vendor/oxid-esales/oxideshop-ce/source/Setup/Sql/database_schema.sql",
-            "mysql -u $DB_USER -h $DB_HOST -p$DB_PASS $DB_NAME < vendor/oxid-esales/oxideshop-ce/source/Setup/Sql/initial_data.sql"
-        ],
-        "ci:prep:integration": [
-            "vendor/bin/oe-console oe:module:apply-configuration",
-            "vendor/bin/oe-eshop-db_views_generate"
-        ],
-        "ci:archive": [
-            "tar -zcf ../$ARTIFACT ./"
-        ],
-        "ci:codecheck": [
-            "mkdir -p reports",
-            "tools/phpcs --standard=phpcs.xml --report-junit=reports/phpcs-junit.xml",
-            "tools/psalm --report=reports/psalm-junit.xml"
-        ]
     },
     "require-dev": {
-        "oxid-esales/testing-library": "^v7.3"
     }
 }
