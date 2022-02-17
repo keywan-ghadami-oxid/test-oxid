@@ -7,7 +7,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "oxid-esales/oxideshop-metapackage-ee": "^v6.4.1"
+        "oxid-esales/oxideshop-metapackage-ee": "^v6.3.1"
     },
     "replace": {
         "amzn/amazon-pay-sdk-php": "*",
