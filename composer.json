@@ -46,5 +46,10 @@
     },
     "require-dev": {
         "oxid-esales/testing-library": "^v8"
+    },
+    "config": {
+        "allow-plugins": {
+            "oxid-esales/oxideshop-unified-namespace-generator": true
+        }
     }
 }
